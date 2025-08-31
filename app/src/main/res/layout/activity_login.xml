@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivBackButton_LoginActivity"
+        android:layout_width="@dimen/iv_backbutton_dims"
+        android:layout_height="@dimen/iv_backbutton_dims"
+
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="@id/tvLogin_LoginActivity"
+
+        app:layout_constraintEnd_toStartOf="@id/tvLogin_LoginActivity"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLogin_LoginActivity"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvLogin_LoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="@dimen/heading_size"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/heading_marginTop"
+        />
+
+    <EditText
+        android:id="@+id/etUsername_LoginActivity"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:hint="Username"
+        android:textSize="@dimen/ettvtext_size"
+        app:layout_constraintTop_toBottomOf="@id/tvLogin_LoginActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <EditText
+        android:id="@+id/etPassword_LoginActivity"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:hint="Password"
+        android:textSize="@dimen/ettvtext_size"
+        app:layout_constraintTop_toBottomOf="@id/etUsername_LoginActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

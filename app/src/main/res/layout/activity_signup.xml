@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/ivBackButton_LoginActivity"
+        android:layout_width="@dimen/iv_backbutton_dims"
+        android:layout_height="@dimen/iv_backbutton_dims"
+
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="@id/tvSignup_SignupActivity"
+
+        app:layout_constraintEnd_toStartOf="@id/tvSignup_SignupActivity"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvSignup_SignupActivity"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvSignup_SignupActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="@dimen/heading_size"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/heading_marginTop"
+        />
+
+    <EditText
+        android:id="@+id/etUsername_SignupActivity"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:hint="Username"
+        android:textSize="@dimen/ettvtext_size"
+        app:layout_constraintTop_toBottomOf="@id/tvSignup_SignupActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/etAge_SignupActivity"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:hint="Age"
+        android:textSize="@dimen/ettvtext_size"
+        app:layout_constraintTop_toBottomOf="@id/etUsername_SignupActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/etRollNo_SignupActivity"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:hint="Roll no."
+        android:textSize="@dimen/ettvtext_size"
+        app:layout_constraintTop_toBottomOf="@id/etAge_SignupActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/etPhoneNumber_SignupActivity"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:hint="Phone Number"
+        android:textSize="@dimen/ettvtext_size"
+        app:layout_constraintTop_toBottomOf="@id/etRollNo_SignupActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/btnCheck_SignupActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

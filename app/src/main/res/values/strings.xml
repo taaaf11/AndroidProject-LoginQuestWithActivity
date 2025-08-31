@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoginQuest</string>
+    <string name="heading_size">40sp</string>
+</resources>

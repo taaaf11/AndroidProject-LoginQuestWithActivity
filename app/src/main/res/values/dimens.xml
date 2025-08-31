@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading_size">40sp</dimen>
+    <dimen name="ettvtext_size">20sp</dimen>
+    <dimen name="et_height">70dp</dimen>
+    <dimen name="et_width">180dp</dimen>
+    <dimen name="heading_marginTop">100dp</dimen>
+    <dimen name="iv_backbutton_dims">42dp</dimen>
+</resources>
